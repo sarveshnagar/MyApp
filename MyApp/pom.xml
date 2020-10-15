@@ -3,4 +3,23 @@
   <groupId>com.ofss</groupId>
   <artifactId>MyApp</artifactId>
   <version>1</version>
+  
+  <build>
+    <plugins>
+      <plugin>
+         <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <configuration>
+        	<archive>
+        		<manifest>
+        			<mainClass>com.ofss.HelloWorld
+        		</mainClass>
+        		</manifest>
+        	</archive>
+        </configuration>
+      </plugin>
+      
+    </plugins>
+  </build>
+  
 </project>
